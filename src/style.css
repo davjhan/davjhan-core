@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    button{
+        @apply focus:outline-none focus:ring focus:ring-gray-200
+    }
+    button.normal {
+        @apply py-2 px-4 rounded-md bg-gray-100 font-semibold disabled:text-gray-500 disabled:bg-gray-100  disabled:cursor-not-allowed
+
+    }
+    button.reg {
+        @apply py-2 px-4 rounded-md bg-black font-semibold disabled:text-gray-500 text-white disabled:bg-gray-300  disabled:cursor-not-allowed
+
+    }
+
+    li a {
+        @apply underline
+    }
+
+    h1 {
+        @apply text-2xl font-bold
+    }
+
+    h2 {
+        @apply text-xl font-bold
+    }
+
+    h3 {
+        @apply text-lg
+    }
+
+    input.reg{
+        @apply border border-gray-500 focus:border-black rounded-md p-2
+    }
+    label{
+        @apply text-xs font-semibold mb-1
+    }
+    .tag.md{
+        @apply font-semibold bg-gray-100 rounded px-2 py-1 text-xs
+    }
+    .tag{
+        @apply font-semibold bg-gray-100 rounded px-1 py-0.5 text-xs
+    }
+}
