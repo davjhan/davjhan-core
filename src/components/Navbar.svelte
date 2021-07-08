@@ -1,14 +1,25 @@
-<nav class="container border-b border-gray-100 px-2">
-    <div class="flex items-center justify-between">
-        <div class="flex items-center">
-            <div class=" flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+<script>
+    import ChevronRightGlyph from 'carbon-icons-svelte/lib/ChevronRightGlyph'
 
-                <a class="inline-flex items-center p-2 px-4 rounded-md text-sm font-semibold hover:underline"
-                   href="/">
-                    David Games
-                </a>
-            </div>
-        </div>
-    </div>
+    export let subPath = undefined
+
+</script>
+
+<nav class="container border-b border-gray-light flex items-center flex-grow py-2 px-4 ">
+    <a class="inline-flex items-center font-bold hover:underline active:underline"
+       href="https://davjhan.com">
+        <svg class='inline-block mr-1' height="16" width="16">
+            <circle cx="8" cy="8" fill="#ffd803" r="6" stroke="black" stroke-width="2"/>
+        </svg>
+        <span class='inline-block '>davjhan.com</span>
+    </a>
+    {#if subPath}
+        <ChevronRightGlyph class='ml-2'/>
+        <a class='ml-2 text-gray-dark hover:underline active:underline' href='/'>{subPath}</a>
+    {/if}
+    <div class="flex-grow"></div>
+    <!--    <a class=" hover:underline"-->
+    <!--       href="/">-->
+    <!--        About-->
+    <!--    </a>-->
 </nav>

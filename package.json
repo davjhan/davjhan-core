@@ -1,15 +1,14 @@
 {
   "name": "davjhan-core",
   "version": "0.0.1",
-  "svelte": "src/index.js",
-  "module": "src/index.js",
   "main": "src/index.js",
+  "svelte": "src/index.js",
   "scripts": {
     "build": "rollup -c",
     "TODOprepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "watch": "nodemon --watch src -e svelte -x 'yalc push'"
+    "watch": "nodemon --watch ./ -e svelte,css,cjs -x 'yalc push --changed'"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
@@ -22,6 +21,7 @@
     "@storybook/svelte": "^6.2.9",
     "@tailwindcss/jit": "^0.1.18",
     "babel-loader": "^8.2.2",
+    "carbon-icons-svelte": "^10.28.0",
     "postcss": "^8.2.14",
     "rollup": "^2.0.0",
     "rollup-plugin-svelte": "^6.0.0",
@@ -34,6 +34,7 @@
   ],
   "files": [
     "src/index.js",
+    "src/style.css",
     "src/components",
     "dist",
     "tailwind.config.cjs"
