@@ -4,30 +4,13 @@
   "main": "src/index.js",
   "svelte": "src/index.js",
   "scripts": {
-    "build": "rollup -c",
-    "TODOprepublishOnly": "npm run build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "watch": "nodemon --watch ./ -e svelte,css,cjs -x 'yalc push --changed'"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@rollup/plugin-node-resolve": "^9.0.0",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/addon-svelte-csf": "^1.0.0",
-    "@storybook/svelte": "^6.2.9",
-    "@tailwindcss/jit": "^0.1.18",
-    "babel-loader": "^8.2.2",
-    "carbon-icons-svelte": "^10.28.0",
-    "postcss": "^8.2.14",
-    "rollup": "^2.0.0",
-    "rollup-plugin-svelte": "^6.0.0",
-    "svelte": "^3.38.2",
-    "svelte-loader": "^3.1.1",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "carbon-icons-svelte": "^10.35.0"
   },
   "keywords": [
     "svelte"
