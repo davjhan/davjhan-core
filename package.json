@@ -1,6 +1,6 @@
 {
   "name": "davjhan-core",
-  "version": "0.0.1",
+  "version": "1.0",
   "main": "src/index.js",
   "svelte": "src/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "src/index.js",
     "src/style.css",
     "src/components",
+    "src/utils",
     "dist",
     "tailwind.config.cjs"
   ]
