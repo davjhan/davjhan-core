@@ -7,9 +7,10 @@
     "watch": "nodemon --watch ./ -e svelte,css,cjs -x 'yalc push --changed'"
   },
   "devDependencies": {
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^3.0.23"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.4",
     "carbon-icons-svelte": "^10.35.0"
   },
   "keywords": [

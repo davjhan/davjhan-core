@@ -18,8 +18,4 @@
         <a class='ml-2 text-gray-dark hover:underline active:underline' href='/'>{subPath}</a>
     {/if}
     <div class="flex-grow"></div>
-    <!--    <a class=" hover:underline"-->
-    <!--       href="/">-->
-    <!--        About-->
-    <!--    </a>-->
 </nav>
